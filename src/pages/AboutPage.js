@@ -18,155 +18,288 @@ const AboutPage = () => {
 
   const facultyLeadership = [
     {
-      name: 'Prof. Michael Akpan',
+      name: 'Prof. Akindele Folarin Alonge',
       position: 'Dean, Faculty of Engineering',
       tenure: '2022 - Present',
-      image: '/api/placeholder/300/300',
-      bio: 'Prof. Michael Akpan is a distinguished engineer with over 20 years of experience in mechanical engineering and academic leadership.',
+      image: '/api/placeholder/300/300', // Replace with actual image path or URL
+      bio: 'Prof. Akindele Folarin Alonge is a Professor of Agricultural and Food Engineering with expertise in renewable energy, postharvest technology, and engineering properties of biological materials. He is an accomplished academic, researcher, and professional engineer.',
       achievements: [
-        'PhD in Mechanical Engineering, University of Cambridge',
-        'Fellow, Nigerian Society of Engineers',
-        'Author of 50+ research publications',
-        'Recipient of Excellence in Teaching Award'
-      ],
-      contact: {
-        email: 'dean.engineering@uniuyo.edu.ng',
-        phone: '+234 85 200 2340'
-      }
-    },
-    {
-      name: 'Prof. Sarah Okon',
-      position: 'Former Dean (2018-2022)',
-      tenure: '2018 - 2022',
-      image: '/api/placeholder/300/300',
-      bio: 'Prof. Sarah Okon led the faculty through significant modernization and expansion during her tenure.',
-      achievements: [
-        'PhD in Chemical Engineering, MIT',
-        'Established 3 new research centers',
-        'Increased faculty enrollment by 40%',
-        'International collaboration programs'
-      ],
-      contact: {
-        email: 's.okon@uniuyo.edu.ng',
-        phone: '+234 85 200 2341'
-      }
+        'Published over 140 articles in local and international journals',
+        'Presented more than 45 invited conference papers',
+        'Pioneer Editor of the Journal of Research and Innovations in Engineering (JORIE)',
+        'Fellow, Nigerian Academy of Engineering (FAEng)',
+        'Fellow, International Academy for Agricultural and Biosystems Engineers (FIAABE)',
+        'Served as National Chairman, Nigerian Institution of Agricultural Engineers (NIAE)',
+        'Recipient of the Graduate Engineer of the Year Award (1989, NSE Ibadan Branch)',
+        'Expert in solar drying, renewable energy, and oil seed processing'
+      ]
     }
   ];
+  
 
   const nuesaExecutives = [
     {
-      name: 'Engr. David Udoh',
+      name: 'James Anietie',
       position: 'President',
-      tenure: '2023 - 2024',
-      department: 'Petroleum Engineering',
-      level: '500 Level',
-      image: '/api/placeholder/300/300',
-      bio: 'Dynamic leader focused on student welfare and academic excellence.',
+      image: '/images/james_anietie.jpg',
+      tenure: '2024 - Present',
+      bio: 'Leads the NUESA UNIUYO Chapter, fostering unity and innovation among engineering students.',
       initiatives: [
-        'E-Library Development Project',
-        'Industry Partnership Program',
-        'Student Mentorship Initiative',
-        'Academic Excellence Awards'
+        'Promoted student welfare and leadership development',
+        'Enhanced collaboration across engineering departments',
+        'Organized faculty-wide engineering symposiums',
+        'Strengthened communication between executives and members'
       ]
     },
     {
-      name: 'Miss Grace Etim',
+      name: 'Nyong Mmokatubasi',
       position: 'Vice President',
-      tenure: '2023 - 2024',
-      department: 'Computer Engineering',
-      level: '400 Level',
-      image: '/api/placeholder/300/300',
-      bio: 'Passionate about technology integration in education and student development.',
+      image: '/images/nyong_mmokatubasi.jpg',
+      tenure: '2024 - Present',
+      bio: 'Supports the president in coordinating executive activities and promoting gender inclusion in engineering.',
       initiatives: [
-        'Digital Skills Training',
-        'Women in Engineering Program',
-        'Tech Innovation Hub',
-        'Career Development Workshops'
+        'Coordinated inter-departmental engagements',
+        'Encouraged female participation in technical projects',
+        'Supervised NUESA mentorship programs',
+        'Promoted academic excellence among members'
       ]
     },
     {
-      name: 'Mr. James Obot',
+      name: 'Jimbo Nseobong',
       position: 'Secretary General',
-      tenure: '2023 - 2024',
-      department: 'Electrical Engineering',
-      level: '400 Level',
-      image: '/api/placeholder/300/300',
-      bio: 'Efficient administrator with strong organizational and communication skills.',
+      image: '/images/jimbo_nseobong.jpg',
+      tenure: '2024 - Present',
+      bio: 'Responsible for all NUESA administrative documentation and communication.',
       initiatives: [
-        'Record Management System',
-        'Communication Enhancement',
-        'Meeting Coordination',
-        'Documentation Standards'
+        'Digitized meeting records and student communications',
+        'Streamlined NUESA correspondence workflow',
+        'Introduced document archiving system for transparency',
+        'Supported event coordination logistics'
       ]
     },
     {
-      name: 'Miss Mary Bassey',
-      position: 'Financial Secretary',
-      tenure: '2023 - 2024',
-      department: 'Chemical Engineering',
-      level: '300 Level',
-      image: '/api/placeholder/300/300',
-      bio: 'Detail-oriented financial manager ensuring transparent and efficient fund management.',
+      name: 'Akwuolob Emeh',
+      position: 'Assistant Secretary General',
+      image: '/images/akwuolob_emeh.jpg',
+      tenure: '2024 - Present',
+      bio: 'Assists the Secretary General and oversees student information management.',
       initiatives: [
-        'Financial Transparency Program',
-        'Budget Optimization',
-        'Scholarship Fund Management',
-        'Audit Systems Implementation'
+        'Supported secretariat operations and documentation',
+        'Organized student orientation programs',
+        'Improved data handling efficiency in the association',
+        'Coordinated internal communications for projects'
+      ]
+    },
+    {
+      name: 'Eyo Precious',
+      position: 'Treasurer',
+      image: '/images/eyo_precious.jpg',
+      tenure: '2024 - Present',
+      bio: 'Manages NUESA’s financial operations with accountability and transparency.',
+      initiatives: [
+        'Introduced a financial tracking system for all dues',
+        'Ensured transparent financial reporting',
+        'Promoted fiscal discipline in event budgeting',
+        'Collaborated on NUESA welfare projects funding'
+      ]
+    },
+    {
+      name: 'Favour Tony',
+      position: 'Director of Academics',
+      image: '/images/etim_favour.jpg',
+      tenure: '2024 - Present',
+      bio: 'Promotes academic excellence and learning opportunities for engineering students.',
+      initiatives: [
+        'Organized academic tutorials and workshops',
+        'Facilitated collaborations with faculty members',
+        'Led academic performance improvement drives',
+        'Hosted academic competitions and seminars'
+      ]
+    },
+    {
+      name: 'Daniel Honour-God',
+      position: 'Director of Information',
+      image: '/images/daniel_honour_god.jpg',
+      tenure: '2024 - Present',
+      bio: 'Handles publicity, information dissemination, and digital engagement for NUESA.',
+      initiatives: [
+        'Revamped NUESA’s online presence and media content',
+        'Introduced regular newsletters and media highlights',
+        'Improved awareness of NUESA projects and events',
+        'Promoted student achievements on digital platforms'
+      ]
+    },
+    {
+      name: 'Goodnews Fortune',
+      position: 'Director of Sports',
+      image: '/images/goodnews_fortune.jpg',
+      tenure: '2024 - Present',
+      bio: 'Promotes fitness, sportsmanship, and recreational events among engineering students.',
+      initiatives: [
+        'Organized inter-departmental sports tournaments',
+        'Encouraged physical wellness campaigns',
+        'Fostered team spirit among students through sports',
+        'Championed NUESA Sports Week initiative'
+      ]
+    },
+    {
+      name: 'Okoh Emmanuel',
+      position: 'Director of Socials',
+      image: '/images/okoh_emmanuel.jpg',
+      tenure: '2024 - Present',
+      bio: 'Coordinates all NUESA social and cultural activities.',
+      initiatives: [
+        'Planned the annual NUESA cultural and dinner night',
+        'Strengthened social connections within departments',
+        'Promoted creative talent showcases',
+        'Managed event planning committees effectively'
+      ]
+    },
+    {
+      name: 'Ubi Gladys',
+      position: 'Financial Secretary',
+      image: '/images/ubi_gladys.jpg',
+      tenure: '2024 - Present',
+      bio: 'Oversees collection, recording, and reporting of NUESA financial transactions.',
+      initiatives: [
+        'Improved dues collection efficiency',
+        'Introduced simplified record-keeping methods',
+        'Promoted transparency in student payments',
+        'Supported financial planning for projects'
+      ]
+    },
+    {
+      name: 'John Christopher',
+      position: 'Director of Transport',
+      image: '/images/john_christopher.jpg',
+      tenure: '2024 - Present',
+      bio: 'Oversees all logistics and transportation needs of the association.',
+      initiatives: [
+        'Ensured smooth logistics during faculty events',
+        'Coordinated student mobility during excursions',
+        'Improved transport system reliability',
+        'Promoted road safety awareness among members'
+      ]
+    },
+    {
+      name: 'Jackson Truth',
+      position: 'Director of Protocols',
+      image: '/images/jackson_truth.jpg',
+      tenure: '2024 - Present',
+      bio: 'Handles official event organization and protocol duties for the association.',
+      initiatives: [
+        'Coordinated event hosting protocols and order',
+        'Assisted with official representation and correspondence',
+        'Managed dignitary engagements during events',
+        'Maintained professional standards at official functions'
       ]
     }
   ];
+  
 
   const departmentHODs = [
     {
-      name: 'Prof. John Akpan',
-      department: 'Mechanical Engineering',
-      tenure: '2020 - Present',
-      image: '/api/placeholder/300/300',
-      specialization: 'Manufacturing Systems & Automation',
+      name: 'Dr. Okon J. Esua',
+      department: 'Agricultural & Food Engineering',
+      tenure: '2020 – Present',
+      image: '/images/okon_esua.jpg',  // you can set this to the image you have (shown above)
+      specialization: 'Renewable Energy & Food Processing Systems',
       achievements: [
-        'PhD in Manufacturing Engineering',
-        '15+ years teaching experience',
-        '30+ research publications',
-        'Industry consultant'
+        'Published over 140 research articles in reputable journals',
+        'Recognized among top 600 Nigerian scientists (Google Scholar ranking)',
+        'Advanced AI and automation in agricultural engineering research',
+        'Promoted food safety and renewable energy innovations'
       ]
     },
     {
-      name: 'Dr. Mary Okon',
+      name: 'Dr. Kingsley C. Egemba',
       department: 'Chemical Engineering',
-      tenure: '2021 - Present',
-      image: '/api/placeholder/300/300',
-      specialization: 'Process Control & Optimization',
+      tenure: '2021 – Present',
+      image: '/images/kingsley_egemba.jpg',
+      specialization: 'Process Design & Optimization',
       achievements: [
-        'PhD in Chemical Engineering',
-        'Process industry expert',
-        '25+ research papers',
-        'Patent holder'
+        'Improved teaching & research standards in Chemical Engineering',
+        'Supervised multiple undergraduate & postgraduate projects',
+        'Published works in process engineering & safety',
+        'Enhanced laboratory facilities & staff collaboration'
       ]
     },
     {
-      name: 'Prof. David Etim',
+      name: 'Dr. Ofonime A. Harry',
+      department: 'Civil Engineering',
+      tenure: '2019 – Present',
+      image: '/images/ofonime_harry.jpg',
+      specialization: 'Geotechnical & Structural Engineering',
+      achievements: [
+        'Led World Bank-supported infrastructure projects',
+        'Published studies on soil stabilization & erosion control',
+        'Strengthened departmental ties with engineering bodies',
+        'Promoted sustainable infrastructure innovations'
+      ]
+    },
+    {
+      name: 'Dr. Philip M. Asuquo',
+      department: 'Computer Engineering',
+      tenure: '2020 – Present',
+      image: '/images/philip_asuquo.jpg',
+      specialization: 'Cybersecurity & IoT',
+      achievements: [
+        'Collaborated with international IoT research hubs (e.g. PETRAS)',
+        'Promoted AI-driven curriculum and student-led projects',
+        'Published in cybersecurity & embedded systems',
+        'Upgraded departmental ICT infrastructure'
+      ]
+    },
+    {
+      name: 'Dr. Nseobong I. Okpura',
+      department: 'Electrical & Electronics Engineering',
+      tenure: '2019 – Present',
+      image: '/images/nseobong_okpura.jpg',
+      specialization: 'Power Systems & Control Engineering',
+      achievements: [
+        'Enhanced research in power systems & renewables',
+        'Mentored young engineers (via IEEE / UNIUYO projects)',
+        'Developed partnerships with energy sectors',
+        'Expanded practical lab & workshop training'
+      ]
+    },
+    {
+      name: 'Dr. Idorenyin E. Markson',
+      department: 'Mechanical Engineering',
+      tenure: '2018 – Present',
+      image: '/images/idorenyin_markson.jpg',
+      specialization: 'Thermo-Fluids & Machine Design',
+      achievements: [
+        'Fostered collaboration between students & industry',
+        'Supervised innovative projects (manufacturing, robotics)',
+        'Encouraged entrepreneurship in mechanical design',
+        'Boosted departmental visibility & research output'
+      ]
+    },
+    {
+      name: 'Dr. Anietie N. Okon',
       department: 'Petroleum Engineering',
-      tenure: '2019 - Present',
-      image: '/api/placeholder/300/300',
-      specialization: 'Reservoir Engineering',
+      tenure: '2019 – Present',
+      image: '/images/anietie_okon.jpg',
+      specialization: 'Reservoir Engineering & Renewable Energy',
       achievements: [
-        'PhD in Petroleum Engineering',
-        'Oil industry veteran',
-        'International consultant',
-        'Research excellence award'
+        'PhD in Petroleum Engineering (UNIUYO) :contentReference[oaicite:2]{index=2}',
+        'International consultant on oil & energy systems',
+        'Published extensively on renewable energy & sustainability :contentReference[oaicite:3]{index=3}',
+        'Research excellence & recognition (e.g. in Google Scholar rankings) :contentReference[oaicite:4]{index=4}'
       ]
     },
     {
-      name: 'Prof. Peter Obot',
-      department: 'Electrical Engineering',
-      tenure: '2022 - Present',
-      image: '/api/placeholder/300/300',
-      specialization: 'Power Systems & Renewable Energy',
+      name: 'Prof. Aondona Paul Ihom',
+      department: 'Metallurgical & Materials Engineering',
+      tenure: '2018 – Present',
+      image: '/images/aondona_ihom.jpg',
+      specialization: 'Materials Processing & Metallurgy',
       achievements: [
-        'PhD in Electrical Engineering',
-        'Power systems expert',
-        'Renewable energy advocate',
-        'Grid modernization consultant'
+        'Renowned in academia & industry for materials engineering',
+        'Published in metallurgy & composite materials',
+        'Built partnerships with manufacturing industry',
+        'Recipient of national & international research awards'
       ]
     }
   ];
