@@ -1309,6 +1309,12 @@ const departmentData = {
 
  ];
 
+ const handleViewMaterials = (course) => {
+  alert(`Viewing materials for ${course.title} (${course.code})`);
+  // Later you can redirect, e.g.:
+  // navigate(`/materials/${department.department}/${course.code}`);
+};
+
  function DepartmentDetail() {
   const { departmentId: deptId } = useParams();
   console.log('Department ID from URL:', deptId);
