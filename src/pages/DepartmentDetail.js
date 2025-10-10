@@ -1451,8 +1451,9 @@ const departmentData = {
           ))}
         </section>
       )}
-    {/* Vision & Mission */}
-    <section className="section-padding bg-white">
+   {/* Vision & Mission */}
+   {department && (
+        <section className="section-padding bg-white">
           <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <motion.div
@@ -1478,33 +1479,9 @@ const departmentData = {
             </div>
           </div>
         </section>
+      )}
+    </div>
+  );
+};
 
-        {/* Sidebar Ad Space - Moved inside the main component */}
-        <section className="section-padding bg-white">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              <div className="lg:col-span-3">
-                {/* ... existing content ... */}
-              </div>
-              
-              {/* Ad Space */}
-              <div className="lg:col-span-1">
-                <div className="sticky top-24">
-                  <div className="bg-gray-100 rounded-lg p-6 h-96 flex items-center justify-center border-2 border-dashed border-gray-300">
-                    <div className="text-center text-gray-500">
-                      <div className="w-16 h-16 bg-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                        <span className="text-sm">AD</span>
-                      </div>
-                      <p className="text-sm">Google AdSense</p>
-                      <p className="text-xs">300x250</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-}
 export default DepartmentDetail;
