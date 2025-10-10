@@ -24,7 +24,7 @@ const Footer = () => {
               Access course materials, resources, and connect with the NUESA community.
             </p>
           </div>
-
+          </div>
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-nuesa-orange">Quick Links</h4>
@@ -64,29 +64,17 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-nuesa-green" />
-                <span className="text-gray-300 text-sm">nuesa@uniuyo.edu.ng</span>
+                <span className="text-gray-300 text-sm">favour.ty05@gmail.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-nuesa-green" />
-                <span className="text-gray-300 text-sm">+234 (0) 85 200 2345</span>
+                <span className="text-gray-300 text-sm">+234 916 872 1123</span>
               </li>
             </ul>
           </div>
 
-          {/* Google AdSense Space */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-nuesa-orange">Advertisement</h4>
-            <div className="bg-gray-800 rounded-lg p-4 h-48 flex items-center justify-center border-2 border-dashed border-gray-600">
-              <div className="text-center text-gray-500">
-                <div className="w-12 h-12 bg-gray-700 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                  <span className="text-xs">AD</span>
-                </div>
-                <p className="text-xs">Google AdSense</p>
-                <p className="text-xs">300x250</p>
-              </div>
-            </div>
-          </div>
-        </div>
+         
+       
 
         {/* Social Media Links */}
         <div className="border-t border-gray-800 pt-8 mt-8">
@@ -94,13 +82,18 @@ const Footer = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-400 text-sm">Follow NUESA:</span>
               <div className="flex space-x-3">
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors">
+                <a href="https://www.facebook.com/nuesauniuyo" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors">
                   <Facebook className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors">
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors">
+                <a
+  href="https://vm.tiktok.com/ZSH7aMJ89VFYv-pR86C/"
+  className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Music className="w-4 h-4" />
+</a>
+                <a href="https://www.instagram.com/nuesa_uniuyo?igsh=MTNiOWtlc3VrZnBtag==" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors">
                   <Instagram className="w-4 h-4" />
                 </a>
               </div>
@@ -111,7 +104,8 @@ const Footer = () => {
                 © 2024 NUESA Uniuyo E-Library. All rights reserved.
               </p>
               <p className="text-gray-500 text-xs mt-1">
-                Developed with ❤️ for NUESA Community
+                Developed by Favour Tony 
+                Director of acedemics Nuesa Uniuyo
               </p>
             </div>
           </div>
@@ -129,7 +123,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+    );
+    };
 
 export default Footer;
