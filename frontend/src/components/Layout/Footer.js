@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { FaMusic } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -91,7 +92,7 @@ const Footer = () => {
   target="_blank"
   rel="noopener noreferrer"
 >
-  <Music className="w-4 h-4" />
+  <FaMusic className="w-4 h-4" />
 </a>
                 <a href="https://www.instagram.com/nuesa_uniuyo?igsh=MTNiOWtlc3VrZnBtag==" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-nuesa-green transition-colors">
                   <Instagram className="w-4 h-4" />
