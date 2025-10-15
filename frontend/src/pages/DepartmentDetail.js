@@ -3,50 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, 
-  User, 
-  Users, 
-  BookOpen, 
-  Download,
-  Calendar,
-  Clock,
-  FileText
+  User
 } from 'lucide-react';
-const departments = [
-  {
-    id: 'mechanical',
-    name: 'Mechanical Engineering',
-  },
-  {
-    id: 'electrical',
-    name: 'Electrical and Electronics Engineering',
-  },
-  {
-    id: 'civil',
-    name: 'Civil Engineering',
-  },
-  {
-    id: 'chemical',
-    name: 'Chemical Engineering',
-  },
-  {
-    id: 'agricultural',
-    name: 'Agricultural Engineering',
-  },
-  {
-    id: 'computer',
-    name: 'Computer Engineering',
-  },
-  {
-    id: 'petroleum',
-    name: 'Petroleum Engineering',
-  },
-  {
-    id: 'food',
-    name: 'Food Engineering',
-  },
-];
-
-
 
 const departmentData = {
     mechanical: {
@@ -926,7 +884,7 @@ const departmentData = {
         { code: 'FDE 202', title: 'Food Chemistry', credits: 3, description: 'Chemical composition of foods, reactions during processing, and quality control.' },
         { code: 'FDE 204', title: 'Heat and Mass Transfer in Food Processing', credits: 3, description: 'Mechanisms of heat and mass transfer in drying, evaporation, and freezing.' },
         { code: 'FDE 206', title: 'Food Microbiology', credits: 3, description: 'Study of microorganisms in foods and their effects on food spoilage and preservation.' },
-        { code: 'ENG 202', title: 'Engineering Thermodynamics II', credits: 3, description: 'Applications of thermodynamic cycles and systems in engineering.' },
+        { code: 'ENG 202', title: 'Engineering Thermodynamics', credits: 3, description: 'Thermodynamic cycles and applications in engineering.' },
         { code: 'GST 202', title: 'Peace and Conflict Resolution', credits: 2, description: 'Understanding the causes and prevention of conflicts in society.' }
       ]
     }
@@ -1298,7 +1256,7 @@ const departmentData = {
     {
       semester: '2nd Semester',
       courses: [
-        { code: 'CIV 502', title: 'Capstone Project II', credits: 6, description: 'Completion and presentation of civil engineering final year project.' },
+        { code: 'CIV 502', title: 'Capstone Project II', credits: 6, description: 'Completion and presentation of final year civil engineering project.' },
         { code: 'CIV 504', title: 'Sustainable Infrastructure', credits: 3, description: 'Green building, sustainable urban development.' },
         { code: 'CIV 506', title: 'Advanced Geotechnical Engineering', credits: 3, description: 'Deep foundations, slope stability, and soil dynamics.' },
         { code: 'CIV 508', title: 'Professional Practice & Ethics', credits: 2, description: 'Civil engineering law, ethics, and professional standards.' }
@@ -1308,12 +1266,6 @@ const departmentData = {
 },
 
  ];
-
- const handleViewMaterials = (course) => {
-  alert(`Viewing materials for ${course.title} (${course.code})`);
-  // Later you can redirect, e.g.:
-  // navigate(`/materials/${department.department}/${course.code}`);
-};
 
  function DepartmentDetail() {
   const { departmentId: deptId } = useParams();

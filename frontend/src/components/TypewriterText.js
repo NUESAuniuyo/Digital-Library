@@ -11,7 +11,6 @@ const TypewriterText = ({
 }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     if (currentIndex < text.length) {
@@ -22,7 +21,6 @@ const TypewriterText = ({
 
       return () => clearTimeout(timer);
     } else {
-      setIsComplete(true);
     }
   }, [currentIndex, text, speed, delay]);
 

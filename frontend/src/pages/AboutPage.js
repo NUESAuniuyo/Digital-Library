@@ -6,7 +6,6 @@ import {
   Calendar, 
   Mail, 
   Phone,
-  MapPin,
   Star,
   Trophy,
   GraduationCap,

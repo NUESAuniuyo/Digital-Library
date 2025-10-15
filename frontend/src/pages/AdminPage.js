@@ -10,7 +10,6 @@ import {
   Trash2, 
   Plus,
   Search,
-  Filter,
   BarChart3,
   Settings,
   Lock,

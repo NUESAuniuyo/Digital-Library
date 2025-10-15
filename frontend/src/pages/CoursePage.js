@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 
 const CoursePage = () => {
-  const { departmentId, courseId } = useParams();
+  const { departmentId } = useParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedType, setSelectedType] = useState('all');
 
