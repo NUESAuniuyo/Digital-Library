@@ -10,8 +10,6 @@ import {
   Zap,
   Globe,
   Shield,
-  ChevronLeft,
-  ChevronRight
 } from 'lucide-react';
 import ParticleBackground from '../components/ParticleBackground';
 import TypewriterText from '../components/TypewriterText';
