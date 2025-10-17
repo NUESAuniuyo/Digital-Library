@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   BookOpen, 
   Users, 
@@ -9,10 +9,19 @@ import {
   ChevronDown,
   Zap,
   Globe,
-  Shield
+  Shield,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import ParticleBackground from '../components/ParticleBackground';
 import TypewriterText from '../components/TypewriterText';
+
+// Sample images - replace with your actual image paths
+const heroImages = [
+  'https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+];
 
 const LandingPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -54,16 +63,29 @@ const LandingPage = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <ParticleBackground />
         
-        {/* Green Background with parallax effect */}
-        <div 
-          className="absolute inset-0 hero-bg-green"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-          }}
-        />
+        {/* Image Slider */}
+        <div className="absolute inset-0 overflow-hidden">
+          <AnimatePresence initial={false} custom={scrollY}>
+            <motion.div
+              key={Math.floor(scrollY / 500) % heroImages.length}
+              initial={{ opacity: 0, scale: 1.1 }}
+              animate={{ opacity: 0.8, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 1.5 }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <img 
+                src={heroImages[Math.floor(scrollY / 500) % heroImages.length]} 
+                alt="Background" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+            </motion.div>
+          </AnimatePresence>
+        </div>
         
         {/* Subtle overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40" />
         
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
@@ -150,12 +172,18 @@ const LandingPage = () => {
               <ChevronDown className="w-8 h-8 text-white/70" />
             </div>
           </motion.div>
-        </div>
+        </div>  {/* This closes the outer div */}
       </section>
 
       {/* Stats Section */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="py-20 bg-gray-50">
+        <motion.div 
+          className="container mx-auto px-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -183,12 +211,18 @@ const LandingPage = () => {
               );
             })}
           </motion.div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Features Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
+      <section className="py-20 bg-white/90 backdrop-blur-sm">
+        <motion.div 
+          className="container mx-auto px-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -225,7 +259,7 @@ const LandingPage = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* CTA Section */}
