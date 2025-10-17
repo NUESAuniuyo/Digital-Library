@@ -115,11 +115,8 @@ const LandingPage = () => {
     className="inline-block text-green-500"
   />
 </h1>
-
-              
-            </motion.div>
-            
-            <motion.p
+</motion.div>
+<motion.p
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 1.5, ease: "easeOut" }}
