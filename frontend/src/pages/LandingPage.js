@@ -58,7 +58,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
         <ParticleBackground />
         
         {/* Image Slider */}
@@ -72,12 +72,20 @@ const LandingPage = () => {
               transition={{ duration: 1.5 }}
               className="absolute inset-0 w-full h-full"
             >
-              <img 
-                src={heroImages[Math.floor(scrollY / 500) % heroImages.length]} 
-                alt="Background" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative w-full h-full">
+                <img 
+                  src={heroImages[Math.floor(scrollY / 500) % heroImages.length]} 
+                  alt="Background" 
+                  className="w-full h-full object-cover object-center min-h-[600px] sm:min-h-0"
+                  style={{
+                    objectPosition: 'center center',
+                    height: '100vh',
+                    width: '100%',
+                    maxHeight: '100%'
+                  }}
+                />
+                <div className="absolute inset-0 bg-black/40" />
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>
@@ -99,15 +107,16 @@ const LandingPage = () => {
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               className="mb-6"
             >
+<h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold hero-text">
+  <TypewriterText 
+    text="Welcome to NUESA E-Library Uniuyo"
+    speed={60}
+    delay={800}
+    className="inline-block text-green-500"
+  />
+</h1>
 
-<h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold hero-text text-white">
-                <TypewriterText 
-                  text="Welcome to NUESA E-Library Uniuyo"
-                  speed={60}
-                  delay={800}
-                  className="inline-block"
-                />
-              </h1>
+              
             </motion.div>
             
             <motion.p
