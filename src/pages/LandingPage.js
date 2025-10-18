@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';  
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { BookOpen, Users, ChevronDown, Book, Users as UsersIcon, FileText, Award, Clock, FileSearch, GraduationCap } from 'lucide-react';
+
 
 // Import your images
 import facultyBuilding1 from '../logo/faculty building 2.png';
