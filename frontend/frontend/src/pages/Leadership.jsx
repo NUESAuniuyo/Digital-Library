@@ -2,26 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Calendar } from 'lucide-react';
 
-// Import dean's image
-import deanImage from '../logo/dean.jpg';
-
-// Faculty leadership data
-const facultyLeadership = [
-  {
-    name: 'Prof. John Doe',
-    position: 'Dean, Faculty of Engineering',
-    tenure: '2020 - Present',
-    image: deanImage, // Using the imported image
-    bio: 'Distinguished professor and researcher with over 20 years of experience in engineering education and leadership.',
-    achievements: [
-      'Ph.D. in Engineering from MIT',
-      'Published over 100 research papers',
-      'Recipient of the National Engineering Excellence Award',
-      'Fellow of the Nigerian Society of Engineers'
-    ]
-  }
-];
-
 const FacultyLeadership = () => (
   <div className="flex justify-center items-center min-h-screen bg-gray-50 px-4">
     <div className="max-w-md w-full bg-white shadow-lg rounded-2xl p-6 text-center">

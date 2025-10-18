@@ -1,10 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import hodPetroleum from '../logo/HODpet.jpg';
-import hodComputer from '../logo/HOD.jpg';
-import hodFood from '../logo/HODf-a.jpg';
-import hodAgricultural from '../logo/HODf-a.jpg';
 import { 
   ArrowLeft, 
   User
@@ -48,7 +44,6 @@ const departmentData = {
     computer: {
       name: 'Computer Engineering',
       hod: 'Dr. Philip M. Asuquo',
-      hodImage: hodComputer,
       description:
         'Computer Engineering blends hardware and software to develop computing systems, embedded devices, networks and intelligent applications for industry and research.',
       vision:
@@ -63,28 +58,26 @@ const departmentData = {
       },
     },
   
-petroleum: {
-  name: 'Petroleum Engineering',
-  hod: 'Dr. Anietie N. Okon',
-  hodImage: hodPetroleum,  // Add this line
-  description:
-    'The Petroleum Engineering Department trains students in upstream and downstream petroleum operations including exploration, drilling, reservoir engineering and production systems.',
-  vision:
-    'To be a regional leader in petroleum technology, research and sustainable hydrocarbon development.',
-  mission:
-    'To equip students with theoretical knowledge and practical skills for safe, efficient and environmentally responsible petroleum operations.',
-  stats: {
-    students: '350+',
-    faculty: '11',
-    courses: '30+',
-    labs: '5',
-  },
-},
+    petroleum: {
+      name: 'Petroleum Engineering',
+      hod: 'Dr. Anietie N. Okon',
+      description:
+        'The Petroleum Engineering Department trains students in upstream and downstream petroleum operations including exploration, drilling, reservoir engineering and production systems.',
+      vision:
+        'To be a regional leader in petroleum technology, research and sustainable hydrocarbon development.',
+      mission:
+        'To equip students with theoretical knowledge and practical skills for safe, efficient and environmentally responsible petroleum operations.',
+      stats: {
+        students: '350+',
+        faculty: '11',
+        courses: '30+',
+        labs: '5',
+      },
+    },
   
     agricultural: {
       name: 'Agricultural Engineering',
       hod: 'Dr. Okon J. Esua',
-      hodImage: hodAgricultural,
       description:
         'Agricultural Engineering applies engineering principles to agricultural production, mechanization, irrigation, post-harvest handling and sustainable farm infrastructure.',
       vision:
@@ -102,7 +95,6 @@ petroleum: {
     food: {
       name: 'Food Engineering',
       hod: 'Dr. Okon J. Esua',
-      hodImage: hodFood,
       description:
         'Food Engineering focuses on the design and optimization of food processing systems, quality assurance, safety, and value-chain engineering for food products.',
       vision:
