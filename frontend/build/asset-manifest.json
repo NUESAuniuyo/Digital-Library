@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.927f3f4c.css",
-    "main.js": "/static/js/main.da2a42ee.js",
+    "main.css": "/static/css/main.c900325c.css",
+    "main.js": "/static/js/main.7f8b9c19.js",
     "static/media/Agric.png": "/static/media/Agric.8727a85006e9762d1c2d.png",
     "static/media/chem.png": "/static/media/chem.b8725f879fb2d05205ee.png",
+    "static/media/HOD.jpg": "/static/media/HOD.8fc3cb25b0ea858cc4a4.jpg",
+    "static/media/faculty building 2.png": "/static/media/faculty building 2.8d2df491c1f21773884f.png",
+    "static/media/faculty building.png": "/static/media/faculty building.6e9633f917bf65f6282b.png",
     "static/media/im.png": "/static/media/im.b3efc1016f482f3f5702.png",
     "static/media/elect.png": "/static/media/elect.86c1019b296cbb5e214e.png",
     "static/media/civil.png": "/static/media/civil.e247ef1205fc6b77aae0.png",
     "static/media/faculty.png": "/static/media/faculty.d3fb9b935bacdd54eb4e.png",
     "static/media/food.png": "/static/media/food.51368e1cd2facf037d20.png",
+    "static/media/HODf-a.jpg": "/static/media/HODf-a.8ae3161787afabca84ee.jpg",
     "static/media/com.png": "/static/media/com.040257256343d5a6721d.png",
+    "static/media/HODpet.jpg": "/static/media/HODpet.1c7f51bbe36b169b0778.jpg",
     "static/media/pet.jpg": "/static/media/pet.163ad4abbc58923ed392.jpg",
     "index.html": "/index.html",
-    "main.927f3f4c.css.map": "/static/css/main.927f3f4c.css.map",
-    "main.da2a42ee.js.map": "/static/js/main.da2a42ee.js.map"
+    "main.c900325c.css.map": "/static/css/main.c900325c.css.map",
+    "main.7f8b9c19.js.map": "/static/js/main.7f8b9c19.js.map"
   },
   "entrypoints": [
-    "static/css/main.927f3f4c.css",
-    "static/js/main.da2a42ee.js"
+    "static/css/main.c900325c.css",
+    "static/js/main.7f8b9c19.js"
   ]
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';  
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { BookOpen, Users, ChevronDown, Book, Users as UsersIcon, FileText, Award, Clock, FileSearch, GraduationCap } from 'lucide-react';
@@ -53,10 +53,10 @@ const features = [
 const ImageSlideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [
+  const images = useMemo(() => [
     { id: 1, src: facultyBuilding1, alt: 'Faculty Building Exterior' },
     { id: 2, src: facultyBuilding2, alt: 'Faculty Building Front View' },
-  ];
+  ], []);
 
   useEffect(() => {
     const interval = setInterval(() => {
